@@ -1,0 +1,50 @@
+.item:visited{
+    text-decoration: none;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: lightslategray;
+    justify-content: center;
+}
+
+li{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    text-decoration: none;
+    height: 5vh;
+    padding: 10px;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: lightblue;
+}
+
+li.fistItem{
+    border-top-left-radius: 15px;
+}
+
+li.lastItem{
+    border-top-right-radius: 20px;
+}
+
+.itemName{
+    text-decoration: none;
+    
+}
+
+.itemName:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    align-self: center;
+    justify-content: center;
+}
