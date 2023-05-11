@@ -5,8 +5,11 @@
 .menuContainer{
     display: flex;
     flex-direction: row;
-    background-color: lightslategray;
+    background-color: green;
+    padding: 10px;
+    height: 20%;
     justify-content: center;
+    border-radius: 10px;
 }
 
 li{
@@ -14,21 +17,25 @@ li{
     background-color: white;
     align-items: center;
     text-decoration: none;
+    margin: 0px;
     height: 5vh;
     padding: 10px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 li:hover{
-    background-color: lightblue;
+    background-color: beige;
 }
 
 li.fistItem{
     border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 li.lastItem{
-    border-top-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .itemName{

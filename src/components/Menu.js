@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 function Menu() {
 
     let array = ["Sobre nós", "Adoção", "Voluntariado", "Contato"]
+    let arrRef = ["aboutUs", "adopt", "volunteering", "contact"]
     let items = []
     let index = 0
 
@@ -11,13 +12,13 @@ function Menu() {
 
         switch (index) {
             case 0:
-                items.push(<li key={index} className="fistItem" ><Link className="itemName" to="login">{element}</Link></li>)
+                items.push(<li key={index} className="fistItem" ><Link className="itemName" to={"#"+arrRef[index]}>{element}</Link></li>)
                 break
             case array.length - 1:
-                items.push(<li key={index} className="lastItem"><Link className="itemName" to="l">{element}</Link></li>)
+                items.push(<li key={index} className="lastItem"><Link className="itemName" to={"#"+arrRef[index]}>{element}</Link></li>)
                 break;
             default:
-                items.push(<li key={index} ><Link className="itemName" to="login">{element}</Link></li>)
+                items.push(<li key={index} ><Link className="itemName" to={"#"+arrRef[index]}>{element}</Link></li>)
                 break;
         }
 
