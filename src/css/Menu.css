@@ -17,7 +17,6 @@ li{
     background-color: white;
     align-items: center;
     text-decoration: none;
-    margin: 0px;
     height: 5vh;
     padding: 10px;
     cursor: pointer;
@@ -40,6 +39,8 @@ li.lastItem{
 
 .itemName{
     text-decoration: none;
+    color: black;
+    cursor: pointer;
     
 }
 
@@ -51,7 +52,6 @@ li.lastItem{
 .menu{
     list-style-type: none;
     display: flex;
-    margin: 0px;
     align-self: center;
     justify-content: center;
 }
