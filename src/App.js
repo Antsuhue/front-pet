@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import Form from './components/Form';
-import "./css/App.css"
-import cat1 from "./images/banner4.png"
-import cat2 from "./images/banner5.png"
+import React, { useState } from "react";
+import Form from "./components/Form";
+import "./css/App.css";
+import cat1 from "./static/images/banner4.png";
+import cat2 from "./static/images/banner5.png";
+import Menu from "./components/Menu";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   const [success, setSuccess] = useState(false);
@@ -14,39 +16,30 @@ const App = () => {
     setSuccess(true);
   };
 
+  const menuItems = [
+    { id: 1, label: 'Home', link: '#section1' },
+    { id: 2, label: 'About', link: '#section2' },
+    { id: 3, label: 'Contact', link: '#' },
+  ];
+
   return (
     <div className="container">
       <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#section1">Seção 1</a>
-            </li>
-            <li>
-              <a href="#section2">Seção 2</a>
-            </li>
-            <li>
-              <a href="#section3">Seção 3</a>
-            </li>
-          </ul>
-        </nav>
+        <Menu items={menuItems}/>
       </header>
 
       <h1>Bem-vindo à nossa Landing Page de Gatos de Estimação!</h1>
-      <img id='imgHeader' className="cat-image" src={cat1} alt="Cat 1" />
+      <img id="imgHeader" className="cat-image" src={cat1} alt="Cat 1" />
 
-      <section id="section1">
-        <h2>Seção 1</h2>
-        <p>Conteúdo da Seção 1</p>
-      </section>
+      <AboutUs/>
 
       <section id="section2">
         <h2>Seção 2</h2>
         {success ? (
-        <p>Formulário enviado com sucesso!</p>
-      ) : (
-        <Form onSubmit={handleSubmit} />
-      )}
+          <p>Formulário enviado com sucesso!</p>
+        ) : (
+          <Form onSubmit={handleSubmit} />
+        )}
       </section>
 
       <section id="section3">
@@ -54,7 +47,7 @@ const App = () => {
         <p>Conteúdo da Seção 3</p>
       </section>
 
-      <img id='imgBottom'  className="cat-image" src={cat2} alt="Cat 2" />
+      <img id="imgBottom" className="cat-image" src={cat2} alt="Cat 2" />
 
       <footer>
         <div className="container">

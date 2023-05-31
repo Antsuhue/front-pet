@@ -1,0 +1,53 @@
+{
+    "form":[
+        {
+            "typeElement": "input",
+            "text":"Nome",
+            "type": "text",
+            "value": "name"
+        },
+        {
+            "typeElement": "input",
+            "text":"Email",
+            "type": "email",
+            "value": "email"
+        },
+        {
+            "typeElement": "select",
+            "text":"Você adotaria um gatinho com mais de 6 anos de idade?",
+            "options":[
+                "Sim",
+                "Não"
+            ],
+            "value": "qst1"
+
+        },
+        {
+            "typeElement": "select",
+            "text":"Você adotaria um gatinho filhote?",
+            "options":[
+                "Sim",
+                "Não"
+            ],
+            "value": "qst2"
+        },
+        {
+            "typeElement": "select",
+            "text": "Você adotaria um gatinho portador de FIV FeLV?",
+            "options":[
+                "Sim",
+                "Não"
+            ],
+            "value": "qst3"
+        },
+        {
+            "typeElement": "select",
+            "text": "Você adotaria um gato que não consegue socializar?",
+            "options":[
+                "Sim",
+                "Não"
+            ],
+            "value": "qst4"
+        }
+    ]
+}

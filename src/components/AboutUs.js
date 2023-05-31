@@ -2,24 +2,28 @@ import "../css/AboutUs.css";
 import about from "../static/aboutUs.json";
 
 function aboutUs() {
-  const keys = Object.keys(about["about"]);
-  let listCards = [];
 
-  keys.forEach((e) => {
-    listCards.push(
-      <div key={e} className="box">
-        <p>{about["about"][e]}</p>
+  const cards = about["about"].map((card) => {
+    return(
+    <div className="card">
+      <div className="card-icon">
+        <img alt={card.alt} src={card.img} />
       </div>
-    );
+      <div className="card-content">
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+      </div>
+    </div>);
   });
 
   return (
-    <div className="sessao" id="aboutUs">
-      <div className="title">
-        <h1>Sobre Nós</h1>
+    <section className="about-section">
+      <h2>Sobre nós</h2>
+
+      <div className="card-container">
+        {cards}
       </div>
-      <div className="content">{listCards}</div>
-    </div>
+    </section>
   );
 }
 

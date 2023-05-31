@@ -1,33 +1,45 @@
-.sessao {
+.about-section {
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: snow; 
+  padding: 15px;
+  border-radius: 30px;
 }
 
-p {
-  padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-div.box {
+.card-icon {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  align-items: flex-start;
-  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: darkgreen;
 }
 
-div.title {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-auto-rows: 200px;
+.card-content {
+  flex: 1;
 }
 
-div.content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 1em;
-  
+.card-content h3 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin-bottom: 0;
 }
