@@ -51,3 +51,28 @@ form button {
 form button:hover {
   background-color: #ff8f00;
 }
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.custom-table thead {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e8e8e8;
+}
